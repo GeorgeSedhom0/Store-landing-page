@@ -1,89 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.9.4/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.4/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/e02838bc7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#5584ac" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="app/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كوميدى VIP</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header id="header">
+      <h1>كوميدى VIP <i class="fa fa-star" aria-hidden="true"></i></h1>
+      <div>
+        <a href="#main">الرئيسية</a>
+        <a href="#features">المميزات</a>
+        <a href="#download">تحميل</a>
+        <a href="#contact">اتصل بنا</a>
+      </div>
+      <img src="imgs/iphone with photo.png" alt="iphone with player" />
+    </header>
+
+    <section id="main">
+      <h2>
+        شاهد المسرحيات الحصريه في مكان واحد <br />
+        وباشتراك 19 ريال مدى الحياه
+      </h2>
+      <div id="imgSlider">
+        <img src="imgs/1.jpg" alt="slide show img 1" />
+        <img src="imgs/2.jpg" alt="slide show img 2" />
+        <img src="imgs/3.jpg" alt="slide show img 3" />
+        <img src="imgs/4.jpg" alt="slide show img 4" />
+        <img src="imgs/5.jpg" alt="slide show img 5" />
+        <div id="lastImg">
+          <img src="imgs/6.jpg" alt="slide show img 6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>المميزات</h2>
+      <span> توفير جديد المسرحيات والمسلسلات الكوميديه اول باول </span>
+      <i class="fa-solid fa-video"></i>
+      <br />
+      <span> سيرفرات خاصه وبدون اعلانات </span>
+      <i class="fa-solid fa-server"></i>
+      <br />
+
+      <span> مبلغ رمزي واشتراك مدى الحياه </span>
+      <i class="fa-solid fa-coins"></i>
+      <br />
+
+      <span> الدفع من داخل التطبيق والتفعيل فوري بعد الشراء </span>
+      <i class="fa-solid fa-credit-card"></i>
+      <br />
+
+      <span> جميع طرق الدفع متاحة </span>
+      <i class="fa-solid fa-cash-register"></i>
+    </section>
+
+    <section id="download">
+      <h2>حمل التطبيق بالطريقه اللي تناسبك</h2>
+      <div>
+        <h3 class="downloadMethod">عن طريق تطبيق TestFlight</h3>
+        <p>تواصل معنا واتس وارسل ايميلك ونرسلك التطبيق ونفهمك بكل الخطوات</p>
+        <h4>
+          <a
+            class="button"
+            href="https://wa.me/message/5O2QTUAYXV7ZO1"
+            target="_blank"
+          >
+            <span>
+              WhatsApp
+              <i class="fa fa-whatsapp" aria-hidden="true"></i
+            ></span>
+          </a>
+        </h4>
+      </div>
+      <div>
+        <h3 class="downloadMethod">
+          التحميل من اي متجر تطبيقات بلس بشكل مباشر
+        </h3>
+
+        تقدر تنسخ هذا الرابط وتعطيه متجرك اللي انت مشترك فيه ويرفعه لك وتحمله
+        بكل سهوله
+
+        <h5>
+          <span class="cloneMe button">
+            https://iosddl.net/19c0c7ce4f6d60d9/ComedyVip.ipa
+            <i class="fa-solid fa-clone"></i>
+          </span>
+        </h5>
+        او تشترك مع هذا المتجر جاهز التطبيق عليه تواصل معهم واتس اب
+        <br />
+        <h4>
+          <a href="http://3sr0store.com" target="_blank" class="button">
+            متجر عصر
+            <i class="fa-solid fa-store"></i>
+          </a>
+        </h4>
+        <h4>
+          <a
+            class="button"
+            href="https://wa.me/message/5O2QTUAYXV7ZO1"
+            target="_blank"
+            style="text-decoration: none; color: black"
+          >
+            <span>
+              WhatsApp
+              <i class="fa fa-whatsapp" aria-hidden="true"></i
+            ></span>
+          </a>
+        </h4>
+        <br />
+        واعطه هذا الرمز وراح يعطيك خصم 50٪ على المتجر <br />+<br />
+        اشتراك تطبيق كوميدي VIP مجانا<br />
+        <h4>
+          <span class="cloneMe button">
+            Store01VIP
+            <i class="fa-solid fa-clone"></i>
+          </span>
+        </h4>
+      </div>
+      <h3 class="downloadMethod">
+        التثبيت عن طريق الجلبريك او مواقع تثبيت الipa
+      </h3>
+      <p>تقدر تنسخ رابط الipa وتثبته باي موقع او تطبيق او اجهزة الجلبريك</p>
+      <h3>
+        <a
+          class="button"
+          href="https://iosddl.net/19c0c7ce4f6d60d9/ComedyVip.ipa"
+          target="_blank"
+        >
+          تنزيل ipa
+
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </h3>
+    </section>
+    <section id="contact">
+      <h2>لاي مشكله تواجهك او مساعده بطريقة تثبيت او اي اقتراح تواصل معنا</h2>
+      <h3>
+        <a
+          class="button"
+          href="https://wa.me/message/5O2QTUAYXV7ZO1"
+          target="_blank"
+        >
+          <span>
+            WhatsApp
+            <i class="fa fa-whatsapp" aria-hidden="true"></i
+          ></span>
+        </a>
+      </h3>
+      <h3>
+        <span class="cloneMe button">
+          <i class="fa-solid fa-clone"></i>
+          ouremail@gmail.com <i class="fa-solid fa-envelope"></i
+        ></span>
+      </h3>
+    </section>
+    <div id="scrollTopCont">
+      <i class="fa-solid fa-arrow-up"></i>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <footer>
+      <h3>
+        جميع الحقوق محفوظة
+        <i class="fa-solid fa-copyright"></i>
+        كوميدى VIP
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </h3>
+    </footer>
   </body>
 </html>
